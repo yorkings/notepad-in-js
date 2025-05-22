@@ -1,4 +1,4 @@
-const notelist = JSON.parse(localStorage.getItem('notelist'));
+const notelist = JSON.parse(localStorage.getItem('notelist')) || [];
 
 renderList();
 function renderList(){
@@ -29,7 +29,7 @@ function addNote(){
     const date=dateinputelement.value
     notelist.push({name,date});
     console.log(notelist);
-    inputelement.innerHTML= " ";
-    dateinputelement.innerHTML= " ";
+    inputelement.innerHTML= "";
+    dateinputelement.innerHTML= "";
     renderList()
 }
