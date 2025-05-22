@@ -26,6 +26,7 @@ button{
     background-color:green;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 .delete{
     background-color:darkred;
